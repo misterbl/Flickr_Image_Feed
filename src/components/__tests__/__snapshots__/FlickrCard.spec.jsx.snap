@@ -32,7 +32,7 @@ ShallowWrapper {
         >
           <img
             alt="titleTest"
-            className="w-100"
+            className="image-card"
             src="imageTest"
           />
           <p>
@@ -79,7 +79,7 @@ ShallowWrapper {
           "children": Array [
             <img
               alt="titleTest"
-              className="w-100"
+              className="image-card"
               src="imageTest"
             />,
             <p>
@@ -118,7 +118,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "alt": "titleTest",
-              "className": "w-100",
+              "className": "image-card",
               "src": "imageTest",
             },
             "ref": null,
@@ -236,7 +236,7 @@ ShallowWrapper {
           >
             <img
               alt="titleTest"
-              className="w-100"
+              className="image-card"
               src="imageTest"
             />
             <p>
@@ -283,7 +283,7 @@ ShallowWrapper {
             "children": Array [
               <img
                 alt="titleTest"
-                className="w-100"
+                className="image-card"
                 src="imageTest"
               />,
               <p>
@@ -322,7 +322,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "titleTest",
-                "className": "w-100",
+                "className": "image-card",
                 "src": "imageTest",
               },
               "ref": null,

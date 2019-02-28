@@ -7,7 +7,10 @@ import FlickrCard from "../components/FlickrCard";
 
 export class Home extends React.Component {
   componentDidMount() {
-    this.props.getflickrFeed();
+    const { flickrFeedItems, getflickrFeed } = this.props;
+    if (!flickrFeedItems) {
+      getflickrFeed();
+    }
   }
   render() {
     return (
