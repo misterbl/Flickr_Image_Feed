@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import Home from "./containers/Home";
 import Forum from "./containers/Forum";
 
-const App = ({ fetchingData }) => (
+export const App = ({ fetchingData }) => (
   <>
     <Header />
     {fetchingData && (
