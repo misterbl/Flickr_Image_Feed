@@ -5,7 +5,12 @@ export const saveflickrFeed = makeActionCreator(
   "flickrFeed"
 );
 
-export const fetchingFlickrFeed = makeActionCreator(
+export const fetchingData = makeActionCreator(
   "FETCHING_FLICKR_FEED",
-  "fetchingFlickrFeed"
+  "fetchingData"
+);
+
+export const saveflickrForum = makeActionCreator(
+  "FETCHING_FLICKR_FORUM",
+  "flickrForum"
 );

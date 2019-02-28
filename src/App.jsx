@@ -1,13 +1,13 @@
 import React from "react";
 import { ClipLoader } from "react-spinners";
+import { Route, Switch, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
+import ROUTES from "./const/route";
 import * as apiThunk from "./actions/thunks/apiThunk";
-import FlickrCard from "./components/FlickrCard";
-import {
-  getflickrFeedItems,
-  fetchingFlickrFeed
-} from "./selectors/apiSelectors";
+import { getflickrFeedItems, fetchingData } from "./selectors/apiSelectors";
 import Header from "./components/Header";
+import Home from "./containers/Home";
+import Forum from "./containers/Forum";
 
 export class App extends React.Component {
   setTimeoutId = 0;
@@ -19,7 +19,7 @@ export class App extends React.Component {
     return (
       <>
         <Header />
-        {this.props.fetchingFlickrFeed && (
+        {this.props.fetchingData && (
           <div className="tc fixed mh7 pa7">
             <ClipLoader
               sizeUnit={"px"}
@@ -29,21 +29,10 @@ export class App extends React.Component {
             />
           </div>
         )}
-        <div className="flex flex-wrap ma3">
-          {this.props.flickrFeedItems &&
-            this.props.flickrFeedItems.map(item => (
-              <FlickrCard
-                image={item.media.m}
-                title={item.title}
-                author={item.author}
-                author_id={item.author_id}
-                link={item.link}
-                description={item.description}
-                tags={item.tags}
-                key={item.title + item.published + item.media.m}
-              />
-            ))}
-        </div>
+        <Switch>
+          <Route exact path={ROUTES.INDEX} component={Home} />
+          <Route path={ROUTES.FORUM} component={Forum} />
+        </Switch>
       </>
     );
   }
@@ -51,7 +40,7 @@ export class App extends React.Component {
 
 export const mapStateToProps = state => ({
   flickrFeedItems: getflickrFeedItems(state),
-  fetchingFlickrFeed: fetchingFlickrFeed(state)
+  fetchingData: fetchingData(state)
 });
 
 export const mapDispatchToProps = {
@@ -59,7 +48,9 @@ export const mapDispatchToProps = {
   getflickrFeedByTags: apiThunk.getflickrFeedByTags
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(App)
+);

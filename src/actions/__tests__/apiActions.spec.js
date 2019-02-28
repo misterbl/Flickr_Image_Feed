@@ -10,21 +10,30 @@ describe("apiActions", () => {
       });
     });
   });
-  describe("fetchingFlickrFeed === true", () => {
-    it("should return if true for fetchingFlickrFeed if the app is fecthcing the flickr feed", () => {
-      const actual = apiActions.fetchingFlickrFeed(true);
+  describe("fetchingData === true", () => {
+    it("should return if true for fetchingData if the app is fecthcing the flickr feed", () => {
+      const actual = apiActions.fetchingData(true);
       expect(actual).toEqual({
         type: "FETCHING_FLICKR_FEED",
-        fetchingFlickrFeed: true
+        fetchingData: true
       });
     });
   });
-  describe("fetchingFlickrFeed === false", () => {
-    it("should return if true for fetchingFlickrFeed if the app is NOT fecthcing the flickr feed", () => {
-      const actual = apiActions.fetchingFlickrFeed(false);
+  describe("fetchingData === false", () => {
+    it("should return if true for fetchingData if the app is NOT fecthcing the flickr feed", () => {
+      const actual = apiActions.fetchingData(false);
       expect(actual).toEqual({
         type: "FETCHING_FLICKR_FEED",
-        fetchingFlickrFeed: false
+        fetchingData: false
+      });
+    });
+  });
+  describe("saveflickrForum", () => {
+    it("should save the forum feed", () => {
+      const actual = apiActions.saveflickrForum("flickrForum");
+      expect(actual).toEqual({
+        type: "FETCHING_FLICKR_FORUM",
+        flickrForum: "flickrForum"
       });
     });
   });

@@ -1,7 +1,8 @@
 import * as apiReducers from "../apiReducers";
 import {
-  fetchingFlickrFeed,
-  saveflickrFeed
+  fetchingData,
+  saveflickrFeed,
+  saveflickrForum
 } from "../../actions/actionCreators/apiActions";
 import generateAppState from "../../testMocks/appState.mock";
 
@@ -53,11 +54,39 @@ describe("apiReducers", () => {
         title: "Uploads from everyone"
       });
     });
-    it(`when called with ${"FETCHING_FLICKR_FEED"} it should update the value of fetchingFlickrFeed `, () => {
-      const isfetchingFlickrFeed = state.api.feed.fetchingFlickrFeed;
-      const action = fetchingFlickrFeed(isfetchingFlickrFeed);
-      expect(apiReducers.feed(isfetchingFlickrFeed, action)).toEqual({
-        fetchingFlickrFeed: false
+    it(`when called with ${"FETCHING_FLICKR_FEED"} it should update the value of fetchingData `, () => {
+      const isfetchingData = state.api.feed.fetchingData;
+      const action = fetchingData(isfetchingData);
+      expect(apiReducers.feed(isfetchingData, action)).toEqual({
+        fetchingData: false
+      });
+    });
+    it(`when called with ${"FETCHING_FLICKR_FORUM"} it should update the value of fetchingData `, () => {
+      const flickrForum = state.api.feed.flickrForum;
+      const action = saveflickrForum(flickrForum);
+      expect(apiReducers.feed(flickrForum, action)).toEqual({
+        flickrForum: {
+          items: [
+            {
+              author: "authorTest",
+              author_id: "123",
+              description: "descriptionTest",
+              link: "linkTest",
+              title: "titleTest"
+            }
+          ],
+          title: "Flickr forum"
+        },
+        items: [
+          {
+            author: "authorTest",
+            author_id: "123",
+            description: "descriptionTest",
+            link: "linkTest",
+            title: "titleTest"
+          }
+        ],
+        title: "Flickr forum"
       });
     });
     it("should return the state when called with an UNKNOWN action", () => {

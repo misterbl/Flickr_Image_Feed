@@ -1,7 +1,7 @@
 const generateAppState = () => ({
   api: {
     feed: {
-      fetchingFlickrFeed: false,
+      fetchingData: false,
       flickrFeed: {
         title: "Uploads from everyone",
         link: "https://www.flickr.com/photos/",
@@ -19,6 +19,18 @@ const generateAppState = () => ({
               description: "descriptionTest",
               tags: "tagsTest"
             }
+          }
+        ]
+      },
+      flickrForum: {
+        title: "Flickr forum",
+        items: [
+          {
+            title: "titleTest",
+            link: "linkTest",
+            description: "descriptionTest",
+            author: "authorTest",
+            author_id: "123"
           }
         ]
       }

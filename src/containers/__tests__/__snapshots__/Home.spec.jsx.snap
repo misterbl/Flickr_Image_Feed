@@ -1,43 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header matches the snapshot 1`] = `
+exports[`Home matches the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withRouter(Connect(Header))
-    dirty={false}
-    errors={Object {}}
-    getflickrFeedByTags={[MockFunction]}
-    handleBlur={[Function]}
-    handleChange={[Function]}
-    handleReset={[Function]}
-    handleSubmit={[Function]}
-    isSubmitting={false}
-    isValid={false}
-    isValidating={false}
-    registerField={[Function]}
-    resetForm={[Function]}
-    setError={[Function]}
-    setErrors={[Function]}
-    setFieldError={[Function]}
-    setFieldTouched={[Function]}
-    setFieldValue={[Function]}
-    setFormikState={[Function]}
-    setStatus={[Function]}
-    setSubmitting={[Function]}
-    setTouched={[Function]}
-    setValues={[Function]}
-    submitCount={0}
-    submitForm={[Function]}
-    touched={Object {}}
-    unregisterField={[Function]}
-    validateField={[Function]}
-    validateForm={[Function]}
-    values={
-      Object {
-        "searchByTags": "",
-      }
-    }
-  />,
+  Symbol(enzyme.__unrendered__): <Home />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -50,25 +16,27 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": undefined,
+      "className": "flex flex-wrap ma3",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": [Function],
+    "rendered": null,
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": undefined,
+        "className": "flex flex-wrap ma3",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": [Function],
+      "rendered": null,
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -92,5 +60,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

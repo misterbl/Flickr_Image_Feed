@@ -1,6 +1,6 @@
 export const feed = (
   state = null,
-  { type, flickrFeed, fetchingFlickrFeed }
+  { type, flickrFeed, fetchingData, flickrForum }
 ) => {
   switch (type) {
     case "SAVE_FLICKR_FEED":
@@ -11,7 +11,13 @@ export const feed = (
     case "FETCHING_FLICKR_FEED":
       return {
         ...state,
-        fetchingFlickrFeed
+        fetchingData
+      };
+
+    case "FETCHING_FLICKR_FORUM":
+      return {
+        ...state,
+        flickrForum
       };
     default:
       return state;

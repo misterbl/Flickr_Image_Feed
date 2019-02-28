@@ -3,18 +3,22 @@ import * as apiSelectors from "../apiSelectors";
 
 describe("apiSelectors", () => {
   const state = generateAppState();
-
   describe("getflickrFeedItems", () => {
     it("should return the flickr feed", () => {
       const actual = apiSelectors.getflickrFeedItems(state);
       expect(actual).toEqual(state.api.feed.flickrFeed.items);
     });
   });
-
-  describe("fetchingFlickrFeed", () => {
+  describe("fetchingData", () => {
     it("should return false", () => {
-      const actual = apiSelectors.fetchingFlickrFeed(state);
+      const actual = apiSelectors.fetchingData(state);
       expect(actual).toEqual(false);
+    });
+  });
+  describe("getForumData", () => {
+    it("should return the forum feed", () => {
+      const actual = apiSelectors.getForumData(state);
+      expect(actual).toEqual(state.api.feed.flickrForum);
     });
   });
 });

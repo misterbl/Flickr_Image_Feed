@@ -1,14 +1,14 @@
 # Flicker photo stream
 
-This app allows users to display Flicker photo stream from the public API.
+This app allows users to display Flicker photo stream from the public API amd the latest Flickr forum items.
 
-Users can search items by tags too.
+Users can search items by tags using the search facility in the Header.
+
+Users can access the latest Flickr forum items clicking on the "Forum" button in the Header.
 
 A safe tag has been added for the search functionality to ensure the application remains suitable for all ages.
 
 The app uses Tachyon CSS classes for better performance.
-
-A router had been implemented in case it is needed in the future.
 
 ## Getting Started
 

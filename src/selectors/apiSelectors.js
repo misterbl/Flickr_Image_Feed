@@ -7,7 +7,12 @@ export const getflickrFeedItems = createSelector(
   feed => feed && feed.flickrFeed && feed.flickrFeed.items
 );
 
-export const fetchingFlickrFeed = createSelector(
+export const fetchingData = createSelector(
   feed,
-  feed => feed && feed.fetchingFlickrFeed
+  feed => feed && feed.fetchingData
+);
+
+export const getForumData = createSelector(
+  feed,
+  feed => feed && feed.flickrForum
 );
