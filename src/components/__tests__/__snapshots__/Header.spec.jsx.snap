@@ -11,6 +11,27 @@ ShallowWrapper {
     handleChange={[Function]}
     handleReset={[Function]}
     handleSubmit={[Function]}
+    history={
+      Object {
+        "action": "PUSH",
+        "block": [MockFunction],
+        "createHref": [MockFunction],
+        "go": [MockFunction],
+        "goBack": [MockFunction],
+        "goForward": [MockFunction],
+        "length": 123,
+        "listen": [MockFunction],
+        "location": Object {
+          "hash": "",
+          "key": "",
+          "pathname": "",
+          "search": "",
+          "state": "",
+        },
+        "push": [MockFunction],
+        "replace": [MockFunction],
+      }
+    }
     isSubmitting={false}
     isValid={false}
     isValidating={false}

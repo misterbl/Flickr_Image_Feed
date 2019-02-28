@@ -25,7 +25,7 @@ export class Header extends React.Component {
       <header className="bg-black h3 flex justify-between">
         <button
           onClick={this.pushToHome}
-          className="bg-transparent bn white ft-35 b ml6 mt2"
+          className="bg-transparent bn white ft-35 b ml6"
         >
           flickr
         </button>

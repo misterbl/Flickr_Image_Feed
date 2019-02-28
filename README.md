@@ -13,6 +13,7 @@ The app uses Tachyon CSS classes for better performance.
 ## Getting Started
 
 Install the project dependencies.
+Node version 10+ is needed to run the app
 
 ```bash
 npm install

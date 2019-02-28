@@ -12,7 +12,7 @@ export class Forum extends React.Component {
       return (
         <>
           <h1 className="tc">{forumData.title}</h1>
-          <div className="flex flex-wrap ma3">
+          <div className="ma3">
             {forumData &&
               forumData.items.map(item => (
                 <ForumCard
