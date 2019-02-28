@@ -1,33 +1,17 @@
-export const activity = (
+export const feed = (
   state = null,
-  {
-    type,
-    registeredAddresses,
-    activityData,
-    activityAddress,
-    fectchingAddresses
-  }
+  { type, flickrFeed, fetchingFlickrFeed }
 ) => {
   switch (type) {
-    case "SAVE_REGISTERED_ADDRESSES":
+    case "SAVE_FLICKR_FEED":
       return {
         ...state,
-        registeredAddresses
+        flickrFeed
       };
-    case "SAVE_ACTIVITY_DATA":
+    case "FETCHING_FLICKR_FEED":
       return {
         ...state,
-        activityData
-      };
-    case "SAVE_ACTIVITY_ADDRESS":
-      return {
-        ...state,
-        activityAddress
-      };
-    case "FETCHING_ADDRESSES":
-      return {
-        ...state,
-        fectchingAddresses
+        fetchingFlickrFeed
       };
     default:
       return state;

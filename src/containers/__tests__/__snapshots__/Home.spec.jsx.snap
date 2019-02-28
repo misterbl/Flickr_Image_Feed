@@ -4,30 +4,40 @@ exports[`Home matches the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Home
-    history={
-      Object {
-        "action": "PUSH",
-        "block": [MockFunction],
-        "createHref": [MockFunction],
-        "go": [MockFunction],
-        "goBack": [MockFunction],
-        "goForward": [MockFunction],
-        "length": 123,
-        "listen": [MockFunction],
-        "location": Object {
-          "hash": "",
-          "key": "",
-          "pathname": "",
-          "search": "",
-          "state": "",
+    fetchingFlickrFeed={false}
+    flickrFeedItems={
+      Array [
+        Object {
+          "media": Object {
+            "author": "authorTest",
+            "author_id": "123",
+            "description": "descriptionTest",
+            "link": "linkTest",
+            "m": "mediaTest",
+            "tags": "tagsTest",
+            "title": "titleTest",
+          },
         },
-        "push": [MockFunction],
-        "replace": [MockFunction],
+      ]
+    }
+    getflickrFeed={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
       }
     }
+    getflickrFeedByTags={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
     "getNode": [Function],
     "render": [Function],
     "simulateError": [Function],
@@ -37,33 +47,44 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
-        <img
-          alt="Hoop's logo"
-          className="w-25"
-          src="hoop-logo.png"
-        />,
-        <div
-          className="text-center "
+        <header
+          className="bg-black h3 flex justify-between"
         >
-          <h1
-            className="font-30 my-5"
+          <p
+            className="white f4 b ml6"
           >
-            To register a new activity, click Next
-          </h1>
-          <button
-            className="btn next-button ml-3"
-            id="next-button"
-            onClick={[Function]}
-            type="button"
+            flickr
+          </p>
+          <div
+            className="ma3 mr6 relative"
           >
-            Next
-          </button>
+            <Formik
+              enableReinitialize={false}
+              initialValues={
+                Object {
+                  "searchByTags": "",
+                }
+              }
+              isInitialValid={false}
+              onSubmit={[Function]}
+              render={[Function]}
+              validateOnBlur={true}
+              validateOnChange={true}
+            />
+          </div>
+        </header>,
+        false,
+        <div
+          className="flex flex-wrap"
+        >
+          <FlickrCard
+            image="mediaTest"
+          />
         </div>,
       ],
-      "className": "bg-white form-container p-5",
     },
     "ref": null,
     "rendered": Array [
@@ -72,35 +93,31 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "Hoop's logo",
-          "className": "w-25",
-          "src": "hoop-logo.png",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "img",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
           "children": Array [
-            <h1
-              className="font-30 my-5"
+            <p
+              className="white f4 b ml6"
             >
-              To register a new activity, click Next
-            </h1>,
-            <button
-              className="btn next-button ml-3"
-              id="next-button"
-              onClick={[Function]}
-              type="button"
+              flickr
+            </p>,
+            <div
+              className="ma3 mr6 relative"
             >
-              Next
-            </button>,
+              <Formik
+                enableReinitialize={false}
+                initialValues={
+                  Object {
+                    "searchByTags": "",
+                  }
+                }
+                isInitialValid={false}
+                onSubmit={[Function]}
+                render={[Function]}
+                validateOnBlur={true}
+                validateOnChange={true}
+              />
+            </div>,
           ],
-          "className": "text-center ",
+          "className": "bg-black h3 flex justify-between",
         },
         "ref": null,
         "rendered": Array [
@@ -109,65 +126,138 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "To register a new activity, click Next",
-              "className": "font-30 my-5",
+              "children": "flickr",
+              "className": "white f4 b ml6",
             },
             "ref": null,
-            "rendered": "To register a new activity, click Next",
-            "type": "h1",
+            "rendered": "flickr",
+            "type": "p",
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Next",
-              "className": "btn next-button ml-3",
-              "id": "next-button",
-              "onClick": [Function],
-              "type": "button",
+              "children": <Formik
+                enableReinitialize={false}
+                initialValues={
+                  Object {
+                    "searchByTags": "",
+                  }
+                }
+                isInitialValid={false}
+                onSubmit={[Function]}
+                render={[Function]}
+                validateOnBlur={true}
+                validateOnChange={true}
+              />,
+              "className": "ma3 mr6 relative",
             },
             "ref": null,
-            "rendered": "Next",
-            "type": "button",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "enableReinitialize": false,
+                "initialValues": Object {
+                  "searchByTags": "",
+                },
+                "isInitialValid": false,
+                "onSubmit": [Function],
+                "render": [Function],
+                "validateOnBlur": true,
+                "validateOnChange": true,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "header",
+      },
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <FlickrCard
+              image="mediaTest"
+            />,
+          ],
+          "className": "flex flex-wrap",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "NaNmediaTest",
+            "nodeType": "function",
+            "props": Object {
+              "author": undefined,
+              "author_id": undefined,
+              "description": undefined,
+              "image": "mediaTest",
+              "link": undefined,
+              "tags": undefined,
+              "title": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
           },
         ],
         "type": "div",
       },
     ],
-    "type": "main",
+    "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
-          <img
-            alt="Hoop's logo"
-            className="w-25"
-            src="hoop-logo.png"
-          />,
-          <div
-            className="text-center "
+          <header
+            className="bg-black h3 flex justify-between"
           >
-            <h1
-              className="font-30 my-5"
+            <p
+              className="white f4 b ml6"
             >
-              To register a new activity, click Next
-            </h1>
-            <button
-              className="btn next-button ml-3"
-              id="next-button"
-              onClick={[Function]}
-              type="button"
+              flickr
+            </p>
+            <div
+              className="ma3 mr6 relative"
             >
-              Next
-            </button>
+              <Formik
+                enableReinitialize={false}
+                initialValues={
+                  Object {
+                    "searchByTags": "",
+                  }
+                }
+                isInitialValid={false}
+                onSubmit={[Function]}
+                render={[Function]}
+                validateOnBlur={true}
+                validateOnChange={true}
+              />
+            </div>
+          </header>,
+          false,
+          <div
+            className="flex flex-wrap"
+          >
+            <FlickrCard
+              image="mediaTest"
+            />
           </div>,
         ],
-        "className": "bg-white form-container p-5",
       },
       "ref": null,
       "rendered": Array [
@@ -176,35 +266,31 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "Hoop's logo",
-            "className": "w-25",
-            "src": "hoop-logo.png",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "img",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
             "children": Array [
-              <h1
-                className="font-30 my-5"
+              <p
+                className="white f4 b ml6"
               >
-                To register a new activity, click Next
-              </h1>,
-              <button
-                className="btn next-button ml-3"
-                id="next-button"
-                onClick={[Function]}
-                type="button"
+                flickr
+              </p>,
+              <div
+                className="ma3 mr6 relative"
               >
-                Next
-              </button>,
+                <Formik
+                  enableReinitialize={false}
+                  initialValues={
+                    Object {
+                      "searchByTags": "",
+                    }
+                  }
+                  isInitialValid={false}
+                  onSubmit={[Function]}
+                  render={[Function]}
+                  validateOnBlur={true}
+                  validateOnChange={true}
+                />
+              </div>,
             ],
-            "className": "text-center ",
+            "className": "bg-black h3 flex justify-between",
           },
           "ref": null,
           "rendered": Array [
@@ -213,42 +299,108 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "To register a new activity, click Next",
-                "className": "font-30 my-5",
+                "children": "flickr",
+                "className": "white f4 b ml6",
               },
               "ref": null,
-              "rendered": "To register a new activity, click Next",
-              "type": "h1",
+              "rendered": "flickr",
+              "type": "p",
             },
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Next",
-                "className": "btn next-button ml-3",
-                "id": "next-button",
-                "onClick": [Function],
-                "type": "button",
+                "children": <Formik
+                  enableReinitialize={false}
+                  initialValues={
+                    Object {
+                      "searchByTags": "",
+                    }
+                  }
+                  isInitialValid={false}
+                  onSubmit={[Function]}
+                  render={[Function]}
+                  validateOnBlur={true}
+                  validateOnChange={true}
+                />,
+                "className": "ma3 mr6 relative",
               },
               "ref": null,
-              "rendered": "Next",
-              "type": "button",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "enableReinitialize": false,
+                  "initialValues": Object {
+                    "searchByTags": "",
+                  },
+                  "isInitialValid": false,
+                  "onSubmit": [Function],
+                  "render": [Function],
+                  "validateOnBlur": true,
+                  "validateOnChange": true,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
+          "type": "header",
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <FlickrCard
+                image="mediaTest"
+              />,
+            ],
+            "className": "flex flex-wrap",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "NaNmediaTest",
+              "nodeType": "function",
+              "props": Object {
+                "author": undefined,
+                "author_id": undefined,
+                "description": undefined,
+                "image": "mediaTest",
+                "link": undefined,
+                "tags": undefined,
+                "title": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": "div",
         },
       ],
-      "type": "main",
+      "type": Symbol(react.fragment),
     },
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
         "lifecycles": Object {
           "componentDidUpdate": Object {
             "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
           },
           "getDerivedStateFromProps": true,
           "getSnapshotBeforeUpdate": true,
@@ -259,5 +411,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

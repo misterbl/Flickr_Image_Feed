@@ -1,21 +1,16 @@
 import * as React from "react";
 import { shallow } from "enzyme";
-import AddressForm from "../AddressForm";
+import SearchForm from "../SearchForm";
 import formikRenderMock from "../../testMocks/formikRender.mock";
 
-describe("AddressForm", () => {
+describe("SearchForm", () => {
   const props = {
     ...formikRenderMock,
     values: {
-      buildingUnit: "buildingUnit",
-      buildingName: "buildingName",
-      streetNumber: "streetNumber",
-      streetName: "streetName",
-      town: "town",
-      postcode: "postcode"
+      searchByTags: ""
     }
   };
-  const wrapper = shallow(<AddressForm {...props} />);
+  const wrapper = shallow(<SearchForm {...props} />);
   it("matches the snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });

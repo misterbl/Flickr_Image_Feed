@@ -1,39 +1,30 @@
 import * as apiActions from "../actionCreators/apiActions";
 
 describe("apiActions", () => {
-  describe("saveRegisteredAddresses", () => {
-    it("should return the registered addresses", () => {
-      const actual = apiActions.saveRegisteredAddresses("registeredAddresses");
+  describe("saveflickrFeed", () => {
+    it("should save the flickr feed", () => {
+      const actual = apiActions.saveflickrFeed("flickrFeed");
       expect(actual).toEqual({
-        type: "SAVE_REGISTERED_ADDRESSES",
-        registeredAddresses: "registeredAddresses"
+        type: "SAVE_FLICKR_FEED",
+        flickrFeed: "flickrFeed"
       });
     });
   });
-  describe("saveActivityData", () => {
-    it("should return the activity Data", () => {
-      const actual = apiActions.saveActivityData("activityData");
+  describe("fetchingFlickrFeed === true", () => {
+    it("should return if true for fetchingFlickrFeed if the app is fecthcing the flickr feed", () => {
+      const actual = apiActions.fetchingFlickrFeed(true);
       expect(actual).toEqual({
-        type: "SAVE_ACTIVITY_DATA",
-        activityData: "activityData"
+        type: "FETCHING_FLICKR_FEED",
+        fetchingFlickrFeed: true
       });
     });
   });
-  describe("saveActivityAddress", () => {
-    it("should return the activity Data", () => {
-      const actual = apiActions.saveActivityAddress("activityAddress");
+  describe("fetchingFlickrFeed === false", () => {
+    it("should return if true for fetchingFlickrFeed if the app is NOT fecthcing the flickr feed", () => {
+      const actual = apiActions.fetchingFlickrFeed(false);
       expect(actual).toEqual({
-        type: "SAVE_ACTIVITY_ADDRESS",
-        activityAddress: "activityAddress"
-      });
-    });
-  });
-  describe("fetchingAddresses", () => {
-    it("should return the activity Data", () => {
-      const actual = apiActions.fetchingAddresses("fectchingAddresses");
-      expect(actual).toEqual({
-        type: "FETCHING_ADDRESSES",
-        fectchingAddresses: "fectchingAddresses"
+        type: "FETCHING_FLICKR_FEED",
+        fetchingFlickrFeed: false
       });
     });
   });

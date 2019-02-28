@@ -1,40 +1,26 @@
 const generateAppState = () => ({
   api: {
-    activity: {
-      activityData: {
-        activityName: "activityName",
-        minRecommendedAge: "No Min. Age",
-        maxRecommendedAge: "No Max. Age",
-        activitWebpage: "activitWebpage",
-        activityPhoneNumber: "123433",
-        activityWebpage: "www.swimming.com"
-      },
-      fectchingAddresses: false,
-      registeredAddresses: [
-        {
-          buildingUnit: "4",
-          buildingName: "London House",
-          streetNumber: "2133",
-          streetName: "London street",
-          town: "London",
-          postcode: "N63GH"
-        },
-        {
-          buildingUnit: "6",
-          buildingName: "Waterloo House",
-          streetNumber: "231",
-          streetName: "Waterloo street",
-          town: "Waterloo",
-          postcode: "W37HY"
-        }
-      ],
-      activityAddress: {
-        buildingUnit: "500",
-        buildingName: "Watermans House",
-        streetNumber: "21",
-        streetName: "New Village Agenue",
-        town: "London",
-        postcode: "E140GL"
+    feed: {
+      fetchingFlickrFeed: false,
+      flickrFeed: {
+        title: "Uploads from everyone",
+        link: "https://www.flickr.com/photos/",
+        description: "",
+        modified: "2019-02-28T14:09:16Z",
+        generator: "https://www.flickr.com",
+        items: [
+          {
+            media: {
+              m: "mediaTest",
+              title: "titleTest",
+              author: "authorTest",
+              author_id: "123",
+              link: "linkTest",
+              description: "descriptionTest",
+              tags: "tagsTest"
+            }
+          }
+        ]
       }
     }
   }

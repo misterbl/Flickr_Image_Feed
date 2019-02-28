@@ -1,18 +1,13 @@
 import { createSelector } from "reselect";
 
-export const activitySelector = state => state.api.activity;
+export const feed = state => state.api.feed;
 
-export const getActivity = createSelector(
-  activitySelector,
-  activity => activity && activity
+export const getflickrFeedItems = createSelector(
+  feed,
+  feed => feed && feed.flickrFeed && feed.flickrFeed.items
 );
 
-export const getRegisteredAddresses = createSelector(
-  activitySelector,
-  activity => activity && activity.registeredAddresses
-);
-
-export const fetchingAddresses = createSelector(
-  activitySelector,
-  activity => activity && activity.fectchingAddresses
+export const fetchingFlickrFeed = createSelector(
+  feed,
+  feed => feed && feed.fetchingFlickrFeed
 );

@@ -1,23 +1,29 @@
 import * as React from "react";
 import { shallow } from "enzyme";
-import historyMock from "../../testMocks/history.mock";
 import { Home } from "../Home";
-import ROUTES from "../../const/route";
 
 describe("Home", () => {
   const props = {
-    history: historyMock
+    flickrFeedItems: [
+      {
+        media: {
+          m: "mediaTest",
+          title: "titleTest",
+          author: "authorTest",
+          author_id: "123",
+          link: "linkTest",
+          description: "descriptionTest",
+          tags: "tagsTest"
+        }
+      }
+    ],
+    fetchingFlickrFeed: false,
+    getflickrFeed: jest.fn(),
+    getflickrFeedByTags: jest.fn()
   };
 
   const wrapper = shallow(<Home {...props} />);
   it("matches the snapshot", () => {
     expect(wrapper).toMatchSnapshot();
-  });
-  it("should call history.push on button click", () => {
-    wrapper
-      .find("button")
-      .at(0)
-      .simulate("click");
-    expect(props.history.push).toHaveBeenCalledWith(ROUTES.ACTIVITY);
   });
 });

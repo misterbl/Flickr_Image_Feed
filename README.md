@@ -1,15 +1,15 @@
-# Hoop Activity Form
+# Flicker photo stream
 
-This app allows users to register an activity to be featured on hoop.co.uk
-
-For data persistency on page refresh, browser local storage is used
+This app allows users to display Flicker photo stream from the public API
+Users can search items by tags too
+A safe tag has been added for the search functionality to ensure the application remains suitable for all ages
 
 ## Getting Started
 
 Install the project dependencies.
 
 ```bash
-npm install
+yarn
 ```
 
 ### Development
@@ -17,13 +17,13 @@ npm install
 No need to build, just start the server.
 
 ```bash
-npm start
+yarn start
 ```
 
 ### Running unit tests locally
 
 ```bash
-npm test
+yarn test
 ```
 
 ### Production
@@ -31,11 +31,11 @@ npm test
 Build the application.
 
 ```bash
-npm build
+yarn build
 ```
 
 Start the application.
 
 ```bash
-npm start
+yarn start
 ```

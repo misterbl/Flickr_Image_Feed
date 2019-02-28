@@ -1,36 +1,94 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import ROUTES from "../const/route";
-import hoopLogo from "../assets/hoop-logo.png";
-import { localStorageRemoveItem } from "../utils/localStorage";
+import { Formik } from "formik";
+import { ClipLoader } from "react-spinners";
+import { connect } from "react-redux";
+import * as apiThunk from "../actions/thunks/apiThunk";
+
+import FlickrCard from "../components/FlickrCard";
+import {
+  getflickrFeedItems,
+  fetchingFlickrFeed
+} from "../selectors/apiSelectors";
+import SearchForm from "../components/SearchForm";
 
 export class Home extends React.Component {
-  onClick = () => {
-    localStorageRemoveItem("activityAddress");
-    localStorageRemoveItem("activityData");
-    this.props.history.push(ROUTES.ACTIVITY);
+  setTimeoutId = 0;
+  componentDidMount() {
+    this.props.getflickrFeed();
+  }
+
+  handleKeyUp = event => {
+    event.persist();
+    window.clearTimeout(this.setTimeoutId);
+    this.setTimeoutId = window.setTimeout(() => {
+      this.displaySearchResults(event.target.value);
+    }, 300);
+    console.log(event.target.value);
   };
 
+  searchByTags = data => {
+    console.log("value", data.searchByTags);
+    this.props.getflickrFeedByTags(data.searchByTags);
+  };
   render() {
     return (
-      <main className="bg-white form-container p-5">
-        <img src={hoopLogo} alt="Hoop's logo" className="w-25" />
-        <div className="text-center ">
-          <h1 className="font-30 my-5">
-            To register a new activity, click Next
-          </h1>
-          <button
-            type="button"
-            id="next-button"
-            className="btn next-button ml-3"
-            onClick={this.onClick}
-          >
-            Next
-          </button>
+      <>
+        <header className="bg-black h3 flex justify-between">
+          <p className="white f4 b ml6">flickr</p>
+          <div className="ma3 mr6 relative">
+            <Formik
+              initialValues={{
+                searchByTags: ""
+              }}
+              onSubmit={this.searchByTags}
+              render={formikProps => <SearchForm {...formikProps} />}
+            />
+          </div>
+        </header>
+        {this.props.fetchingFlickrFeed && (
+          <div className="tc fixed mh7 pa7">
+            <ClipLoader
+              sizeUnit={"px"}
+              size={40}
+              color={"#123abc"}
+              loading={true}
+            />
+          </div>
+        )}
+        <div className="flex flex-wrap">
+          {this.props.flickrFeedItems &&
+            this.props.flickrFeedItems.map(item => (
+              <FlickrCard
+                image={item.media.m}
+                title={item.title}
+                author={item.author}
+                author_id={item.author_id}
+                link={item.link}
+                description={item.description}
+                tags={item.tags}
+                key={item.title + item.published + item.media.m}
+              />
+            ))}
         </div>
-      </main>
+      </>
     );
   }
 }
 
-export default withRouter(Home);
+export const mapStateToProps = state => ({
+  flickrFeedItems: getflickrFeedItems(state),
+  fetchingFlickrFeed: fetchingFlickrFeed(state)
+});
+
+export const mapDispatchToProps = {
+  getflickrFeed: apiThunk.getflickrFeed,
+  getflickrFeedByTags: apiThunk.getflickrFeedByTags
+};
+
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(Home)
+);

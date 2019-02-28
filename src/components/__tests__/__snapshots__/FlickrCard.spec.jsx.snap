@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlickrCard matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FlickrCard
+    author="authorTest"
+    author_id="123Test"
+    description="descriptionTest"
+    image="imageTest"
+    link="linkTest"
+    tags="tagsTest"
+    title="titleTest"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="titleTest"
+          className="w-100"
+          src="imageTest"
+        />,
+        <p>
+          <a
+            href="linkTest"
+          >
+            titleTest
+          </a>
+           by
+          <a
+            href="https://www.flickr.com/photos/123Test"
+          >
+             authorTest
+          </a>
+        </p>,
+        <p
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Description descriptionTest",
+            }
+          }
+        />,
+        <p>
+          Tags: 
+          tagsTest
+        </p>,
+      ],
+      "className": "ba pa3 w-25 ma3 overflow-hidden",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "titleTest",
+          "className": "w-100",
+          "src": "imageTest",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <a
+              href="linkTest"
+            >
+              titleTest
+            </a>,
+            " by",
+            <a
+              href="https://www.flickr.com/photos/123Test"
+            >
+               authorTest
+            </a>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "titleTest",
+              "href": "linkTest",
+            },
+            "ref": null,
+            "rendered": "titleTest",
+            "type": "a",
+          },
+          " by",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " authorTest",
+              "href": "https://www.flickr.com/photos/123Test",
+            },
+            "ref": null,
+            "rendered": " authorTest",
+            "type": "a",
+          },
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "dangerouslySetInnerHTML": Object {
+            "__html": "Description descriptionTest",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Tags: ",
+            "tagsTest",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Tags: ",
+          "tagsTest",
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="titleTest"
+            className="w-100"
+            src="imageTest"
+          />,
+          <p>
+            <a
+              href="linkTest"
+            >
+              titleTest
+            </a>
+             by
+            <a
+              href="https://www.flickr.com/photos/123Test"
+            >
+               authorTest
+            </a>
+          </p>,
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "Description descriptionTest",
+              }
+            }
+          />,
+          <p>
+            Tags: 
+            tagsTest
+          </p>,
+        ],
+        "className": "ba pa3 w-25 ma3 overflow-hidden",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "titleTest",
+            "className": "w-100",
+            "src": "imageTest",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <a
+                href="linkTest"
+              >
+                titleTest
+              </a>,
+              " by",
+              <a
+                href="https://www.flickr.com/photos/123Test"
+              >
+                 authorTest
+              </a>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "titleTest",
+                "href": "linkTest",
+              },
+              "ref": null,
+              "rendered": "titleTest",
+              "type": "a",
+            },
+            " by",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " authorTest",
+                "href": "https://www.flickr.com/photos/123Test",
+              },
+              "ref": null,
+              "rendered": " authorTest",
+              "type": "a",
+            },
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "dangerouslySetInnerHTML": Object {
+              "__html": "Description descriptionTest",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Tags: ",
+              "tagsTest",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Tags: ",
+            "tagsTest",
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
