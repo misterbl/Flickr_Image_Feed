@@ -27,166 +27,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <img
-          alt="titleTest"
-          className="w-100"
-          src="imageTest"
-        />,
-        <p>
-          <a
-            href="linkTest"
-          >
-            titleTest
-          </a>
-           by
-          <a
-            href="https://www.flickr.com/photos/123Test"
-          >
-             authorTest
-          </a>
-        </p>,
-        <p
-          className="mt4 no-underline"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "Description descriptionTest",
-            }
-          }
-        />,
-        <button
-          onCLick={[Function]}
+        <div
+          className="ba pa3 mw5 mr4 mt4 overflow-hidden card-container  mh-500"
         >
-          show more
-        </button>,
-        <p>
-          Tags: 
-          tagsTest
-        </p>,
-      ],
-      "className": "ba pa3 mw5 mr4 mv4 overflow-hidden card-container  mh-500",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "alt": "titleTest",
-          "className": "w-100",
-          "src": "imageTest",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "img",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <a
-              href="linkTest"
-            >
-              titleTest
-            </a>,
-            " by",
-            <a
-              href="https://www.flickr.com/photos/123Test"
-            >
-               authorTest
-            </a>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "titleTest",
-              "href": "linkTest",
-            },
-            "ref": null,
-            "rendered": "titleTest",
-            "type": "a",
-          },
-          " by",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": " authorTest",
-              "href": "https://www.flickr.com/photos/123Test",
-            },
-            "ref": null,
-            "rendered": " authorTest",
-            "type": "a",
-          },
-        ],
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "mt4 no-underline",
-          "dangerouslySetInnerHTML": Object {
-            "__html": "Description descriptionTest",
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "show more",
-          "onCLick": [Function],
-        },
-        "ref": null,
-        "rendered": "show more",
-        "type": "button",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "Tags: ",
-            "tagsTest",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "Tags: ",
-          "tagsTest",
-        ],
-        "type": "p",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
           <img
             alt="titleTest"
             className="w-100"
             src="imageTest"
-          />,
+          />
           <p>
             <a
               href="linkTest"
@@ -199,7 +47,7 @@ ShallowWrapper {
             >
                authorTest
             </a>
-          </p>,
+          </p>
           <p
             className="mt4 no-underline"
             dangerouslySetInnerHTML={
@@ -207,18 +55,223 @@ ShallowWrapper {
                 "__html": "Description descriptionTest",
               }
             }
-          />,
-          <button
-            onCLick={[Function]}
-          >
-            show more
-          </button>,
+          />
           <p>
             Tags: 
             tagsTest
-          </p>,
+          </p>
+        </div>,
+        <button
+          className="show-more-less-button"
+          onClick={[Function]}
+        >
+          show more
+        </button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="titleTest"
+              className="w-100"
+              src="imageTest"
+            />,
+            <p>
+              <a
+                href="linkTest"
+              >
+                titleTest
+              </a>
+               by
+              <a
+                href="https://www.flickr.com/photos/123Test"
+              >
+                 authorTest
+              </a>
+            </p>,
+            <p
+              className="mt4 no-underline"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Description descriptionTest",
+                }
+              }
+            />,
+            <p>
+              Tags: 
+              tagsTest
+            </p>,
+          ],
+          "className": "ba pa3 mw5 mr4 mt4 overflow-hidden card-container  mh-500",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "titleTest",
+              "className": "w-100",
+              "src": "imageTest",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  href="linkTest"
+                >
+                  titleTest
+                </a>,
+                " by",
+                <a
+                  href="https://www.flickr.com/photos/123Test"
+                >
+                   authorTest
+                </a>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "titleTest",
+                  "href": "linkTest",
+                },
+                "ref": null,
+                "rendered": "titleTest",
+                "type": "a",
+              },
+              " by",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": " authorTest",
+                  "href": "https://www.flickr.com/photos/123Test",
+                },
+                "ref": null,
+                "rendered": " authorTest",
+                "type": "a",
+              },
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "mt4 no-underline",
+              "dangerouslySetInnerHTML": Object {
+                "__html": "Description descriptionTest",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Tags: ",
+                "tagsTest",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Tags: ",
+              "tagsTest",
+            ],
+            "type": "p",
+          },
         ],
-        "className": "ba pa3 mw5 mr4 mv4 overflow-hidden card-container  mh-500",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "show more",
+          "className": "show-more-less-button",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "show more",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="ba pa3 mw5 mr4 mt4 overflow-hidden card-container  mh-500"
+          >
+            <img
+              alt="titleTest"
+              className="w-100"
+              src="imageTest"
+            />
+            <p>
+              <a
+                href="linkTest"
+              >
+                titleTest
+              </a>
+               by
+              <a
+                href="https://www.flickr.com/photos/123Test"
+              >
+                 authorTest
+              </a>
+            </p>
+            <p
+              className="mt4 no-underline"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Description descriptionTest",
+                }
+              }
+            />
+            <p>
+              Tags: 
+              tagsTest
+            </p>
+          </div>,
+          <button
+            className="show-more-less-button"
+            onClick={[Function]}
+          >
+            show more
+          </button>,
+        ],
       },
       "ref": null,
       "rendered": Array [
@@ -227,32 +280,39 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "titleTest",
-            "className": "w-100",
-            "src": "imageTest",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "img",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
             "children": Array [
-              <a
-                href="linkTest"
-              >
-                titleTest
-              </a>,
-              " by",
-              <a
-                href="https://www.flickr.com/photos/123Test"
-              >
-                 authorTest
-              </a>,
+              <img
+                alt="titleTest"
+                className="w-100"
+                src="imageTest"
+              />,
+              <p>
+                <a
+                  href="linkTest"
+                >
+                  titleTest
+                </a>
+                 by
+                <a
+                  href="https://www.flickr.com/photos/123Test"
+                >
+                   authorTest
+                </a>
+              </p>,
+              <p
+                className="mt4 no-underline"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Description descriptionTest",
+                  }
+                }
+              />,
+              <p>
+                Tags: 
+                tagsTest
+              </p>,
             ],
+            "className": "ba pa3 mw5 mr4 mt4 overflow-hidden card-container  mh-500",
           },
           "ref": null,
           "rendered": Array [
@@ -261,42 +321,96 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "titleTest",
-                "href": "linkTest",
+                "alt": "titleTest",
+                "className": "w-100",
+                "src": "imageTest",
               },
               "ref": null,
-              "rendered": "titleTest",
-              "type": "a",
+              "rendered": null,
+              "type": "img",
             },
-            " by",
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": " authorTest",
-                "href": "https://www.flickr.com/photos/123Test",
+                "children": Array [
+                  <a
+                    href="linkTest"
+                  >
+                    titleTest
+                  </a>,
+                  " by",
+                  <a
+                    href="https://www.flickr.com/photos/123Test"
+                  >
+                     authorTest
+                  </a>,
+                ],
               },
               "ref": null,
-              "rendered": " authorTest",
-              "type": "a",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "titleTest",
+                    "href": "linkTest",
+                  },
+                  "ref": null,
+                  "rendered": "titleTest",
+                  "type": "a",
+                },
+                " by",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " authorTest",
+                    "href": "https://www.flickr.com/photos/123Test",
+                  },
+                  "ref": null,
+                  "rendered": " authorTest",
+                  "type": "a",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "mt4 no-underline",
+                "dangerouslySetInnerHTML": Object {
+                  "__html": "Description descriptionTest",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Tags: ",
+                  "tagsTest",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Tags: ",
+                "tagsTest",
+              ],
+              "type": "p",
             },
           ],
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "mt4 no-underline",
-            "dangerouslySetInnerHTML": Object {
-              "__html": "Description descriptionTest",
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "p",
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -304,28 +418,12 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "show more",
-            "onCLick": [Function],
+            "className": "show-more-less-button",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "show more",
           "type": "button",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "Tags: ",
-              "tagsTest",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "Tags: ",
-            "tagsTest",
-          ],
-          "type": "p",
         },
       ],
       "type": "div",
