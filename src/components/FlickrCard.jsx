@@ -19,7 +19,6 @@ const FlickrCard = ({
       dangerouslySetInnerHTML={{ __html: `Description ${description}` }}
       className="mt4"
     />
-    {/* TODO: add a comma between tags */}
     {tags.length > 0 && <p>Tags: {tags}</p>}
   </div>
 );
