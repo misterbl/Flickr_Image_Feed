@@ -3,18 +3,12 @@ import { ClipLoader } from "react-spinners";
 import { Route, Switch, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import ROUTES from "./const/route";
-import * as apiThunk from "./actions/thunks/apiThunk";
-import { getflickrFeedItems, fetchingData } from "./selectors/apiSelectors";
+import { fetchingData } from "./selectors/apiSelectors";
 import Header from "./components/Header";
 import Home from "./containers/Home";
 import Forum from "./containers/Forum";
 
 export class App extends React.Component {
-  setTimeoutId = 0;
-  componentDidMount() {
-    this.props.getflickrFeed();
-  }
-
   render() {
     return (
       <>
@@ -39,18 +33,7 @@ export class App extends React.Component {
 }
 
 export const mapStateToProps = state => ({
-  flickrFeedItems: getflickrFeedItems(state),
   fetchingData: fetchingData(state)
 });
 
-export const mapDispatchToProps = {
-  getflickrFeed: apiThunk.getflickrFeed,
-  getflickrFeedByTags: apiThunk.getflickrFeedByTags
-};
-
-export default withRouter(
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(App)
-);
+export default withRouter(connect(mapStateToProps)(App));
