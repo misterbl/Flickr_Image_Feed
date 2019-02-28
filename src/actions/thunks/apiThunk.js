@@ -4,13 +4,12 @@ import {
   saveflickrForum,
   fetchingData
 } from "../actionCreators/apiActions";
+import config from "../../config";
 
 export const getflickrFeed = () => async dispatch => {
   try {
     dispatch(fetchingData(true));
-    const url =
-      "https://api.flickr.com/services/feeds/photos_public.gne?tags=safe&format=json";
-    const response = await fetchJsonp(url, {
+    const response = await fetchJsonp(config.flickrFeedUri, {
       jsonpCallbackFunction: "jsonFlickrFeed"
     });
 
@@ -28,7 +27,7 @@ export const getflickrFeed = () => async dispatch => {
 export const getflickrFeedByTags = tags => async dispatch => {
   try {
     dispatch(fetchingData(true));
-    const url = `https://api.flickr.com/services/feeds/photos_public.gne?tags=${("safe",
+    const url = `${config.basePhotoPublicUri}?tags=${("safe",
     tags)}&format=json`;
     const response = await fetchJsonp(url, {
       jsonpCallbackFunction: "jsonFlickrFeed"
@@ -48,8 +47,7 @@ export const getflickrFeedByTags = tags => async dispatch => {
 export const getForumFeed = () => async dispatch => {
   // try {
   dispatch(fetchingData(true));
-  const url = `https://api.flickr.com/services/feeds/forums.gne?format=json`;
-  const response = await fetchJsonp(url, {
+  const response = await fetchJsonp(config.forumFeedUri, {
     jsonpCallbackFunction: "jsonFlickrFeed"
   });
 

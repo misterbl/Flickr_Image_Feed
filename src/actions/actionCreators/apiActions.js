@@ -1,16 +1,17 @@
 import { makeActionCreator } from "../../utils/actionCreator";
+import actionTypes from "../../const/actionTypes";
 
 export const saveflickrFeed = makeActionCreator(
-  "SAVE_FLICKR_FEED",
+  actionTypes.SAVE_FLICKR_FEED,
   "flickrFeed"
 );
 
 export const fetchingData = makeActionCreator(
-  "FETCHING_FLICKR_FEED",
+  actionTypes.FETCHING_FLICKR_FEED,
   "fetchingData"
 );
 
 export const saveflickrForum = makeActionCreator(
-  "FETCHING_FLICKR_FORUM",
+  actionTypes.FETCHING_FLICKR_FORUM,
   "flickrForum"
 );

@@ -1,4 +1,6 @@
 import * as apiReducers from "../apiReducers";
+import actionTypes from "../../const/actionTypes";
+
 import {
   fetchingData,
   saveflickrFeed,
@@ -10,7 +12,9 @@ describe("apiReducers", () => {
   const state = generateAppState();
 
   describe("feed", () => {
-    it(`when called with ${"SAVE_FLICKR_FEED"} it should update the flickr feed data`, () => {
+    it(`when called with ${
+      actionTypes.SAVE_FLICKR_FEED
+    } it should update the flickr feed data`, () => {
       const flickrFeed = state.api.feed.flickrFeed;
       const action = saveflickrFeed(flickrFeed);
       expect(apiReducers.feed(flickrFeed, action)).toEqual({
@@ -54,14 +58,18 @@ describe("apiReducers", () => {
         title: "Uploads from everyone"
       });
     });
-    it(`when called with ${"FETCHING_FLICKR_FEED"} it should update the value of fetchingData `, () => {
+    it(`when called with ${
+      actionTypes.FETCHING_FLICKR_FEED
+    } it should update the value of fetchingData `, () => {
       const isfetchingData = state.api.feed.fetchingData;
       const action = fetchingData(isfetchingData);
       expect(apiReducers.feed(isfetchingData, action)).toEqual({
         fetchingData: false
       });
     });
-    it(`when called with ${"FETCHING_FLICKR_FORUM"} it should update the value of fetchingData `, () => {
+    it(`when called with ${
+      actionTypes.FETCHING_FLICKR_FORUM
+    } it should update the value of fetchingData `, () => {
       const flickrForum = state.api.feed.flickrForum;
       const action = saveflickrForum(flickrForum);
       expect(apiReducers.feed(flickrForum, action)).toEqual({

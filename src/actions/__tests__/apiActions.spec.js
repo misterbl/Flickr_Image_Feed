@@ -1,11 +1,12 @@
 import * as apiActions from "../actionCreators/apiActions";
+import actionTypes from "../../const/actionTypes";
 
 describe("apiActions", () => {
   describe("saveflickrFeed", () => {
     it("should save the flickr feed", () => {
       const actual = apiActions.saveflickrFeed("flickrFeed");
       expect(actual).toEqual({
-        type: "SAVE_FLICKR_FEED",
+        type: actionTypes.SAVE_FLICKR_FEED,
         flickrFeed: "flickrFeed"
       });
     });
@@ -14,7 +15,7 @@ describe("apiActions", () => {
     it("should return if true for fetchingData if the app is fecthcing the flickr feed", () => {
       const actual = apiActions.fetchingData(true);
       expect(actual).toEqual({
-        type: "FETCHING_FLICKR_FEED",
+        type: actionTypes.FETCHING_FLICKR_FEED,
         fetchingData: true
       });
     });
@@ -23,7 +24,7 @@ describe("apiActions", () => {
     it("should return if true for fetchingData if the app is NOT fecthcing the flickr feed", () => {
       const actual = apiActions.fetchingData(false);
       expect(actual).toEqual({
-        type: "FETCHING_FLICKR_FEED",
+        type: actionTypes.FETCHING_FLICKR_FEED,
         fetchingData: false
       });
     });
@@ -32,7 +33,7 @@ describe("apiActions", () => {
     it("should save the forum feed", () => {
       const actual = apiActions.saveflickrForum("flickrForum");
       expect(actual).toEqual({
-        type: "FETCHING_FLICKR_FORUM",
+        type: actionTypes.FETCHING_FLICKR_FORUM,
         flickrForum: "flickrForum"
       });
     });

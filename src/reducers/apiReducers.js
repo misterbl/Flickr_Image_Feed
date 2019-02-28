@@ -1,20 +1,22 @@
+import actionTypes from "../const/actionTypes";
+
 export const feed = (
   state = null,
   { type, flickrFeed, fetchingData, flickrForum }
 ) => {
   switch (type) {
-    case "SAVE_FLICKR_FEED":
+    case actionTypes.SAVE_FLICKR_FEED:
       return {
         ...state,
         flickrFeed
       };
-    case "FETCHING_FLICKR_FEED":
+    case actionTypes.FETCHING_FLICKR_FEED:
       return {
         ...state,
         fetchingData
       };
 
-    case "FETCHING_FLICKR_FORUM":
+    case actionTypes.FETCHING_FLICKR_FORUM:
       return {
         ...state,
         flickrForum
