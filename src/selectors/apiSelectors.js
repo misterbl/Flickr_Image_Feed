@@ -2,7 +2,7 @@ import { createSelector } from "reselect";
 
 export const feed = state => state.api.feed;
 
-export const getflickrFeedItems = createSelector(
+export const getFlickrFeedItems = createSelector(
   feed,
   feed => feed && feed.flickrFeed && feed.flickrFeed.items
 );

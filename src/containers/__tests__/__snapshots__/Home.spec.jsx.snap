@@ -5,19 +5,22 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Home
     fetchingData={false}
-    getflickrFeed={
-      [MockFunction] {
-        "calls": Array [
-          Array [],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
+    flickrFeedItems={
+      Array [
+        Object {
+          "media": Object {
+            "author": "authorTest",
+            "author_id": "123",
+            "description": "descriptionTest",
+            "link": "linkTest",
+            "m": "mediaTest",
+            "tags": "tagsTest",
+            "title": "titleTest",
           },
-        ],
-      }
+        },
+      ]
     }
+    getFlickrFeed={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -33,11 +36,33 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": undefined,
+      "children": Array [
+        <FlickrCard
+          image="mediaTest"
+        />,
+      ],
       "className": "flex flex-wrap ml6",
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "NaNmediaTest",
+        "nodeType": "class",
+        "props": Object {
+          "author": undefined,
+          "author_id": undefined,
+          "description": undefined,
+          "image": "mediaTest",
+          "link": undefined,
+          "tags": undefined,
+          "title": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -46,11 +71,33 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": undefined,
+        "children": Array [
+          <FlickrCard
+            image="mediaTest"
+          />,
+        ],
         "className": "flex flex-wrap ml6",
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "NaNmediaTest",
+          "nodeType": "class",
+          "props": Object {
+            "author": undefined,
+            "author_id": undefined,
+            "description": undefined,
+            "image": "mediaTest",
+            "link": undefined,
+            "tags": undefined,
+            "title": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": "div",
     },
   ],

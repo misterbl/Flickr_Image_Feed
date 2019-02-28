@@ -60,7 +60,7 @@ describe("apiReducers", () => {
     });
     it(`when called with ${
       actionTypes.FETCHING_FLICKR_FEED
-    } it should update the value of fetchingData `, () => {
+    } it should update the value of fetchingData`, () => {
       const isfetchingData = state.api.feed.fetchingData;
       const action = fetchingData(isfetchingData);
       expect(apiReducers.feed(isfetchingData, action)).toEqual({
@@ -69,7 +69,7 @@ describe("apiReducers", () => {
     });
     it(`when called with ${
       actionTypes.FETCHING_FLICKR_FORUM
-    } it should update the value of fetchingData `, () => {
+    } it should update the value of fetchingData`, () => {
       const flickrForum = state.api.feed.flickrForum;
       const action = saveflickrForum(flickrForum);
       expect(apiReducers.feed(flickrForum, action)).toEqual({

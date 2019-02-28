@@ -1,9 +1,12 @@
 import React from "react";
 
 export class FlickrCard extends React.Component {
-  state = {
-    showMore: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      showMore: false
+    };
+  }
 
   showMoreorLess = () => {
     this.setState({ showMore: !this.state.showMore });

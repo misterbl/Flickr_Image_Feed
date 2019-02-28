@@ -21,6 +21,7 @@ export const feed = (
         ...state,
         flickrForum
       };
+
     default:
       return state;
   }

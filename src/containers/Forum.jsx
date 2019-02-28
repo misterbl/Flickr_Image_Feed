@@ -6,6 +6,9 @@ import ForumCard from "../components/ForumCard";
 import * as apiThunk from "../actions/thunks/apiThunk";
 
 export class Forum extends React.Component {
+  componentDidMount() {
+    this.props.getForumFeed();
+  }
   render() {
     const { forumData } = this.props;
     if (forumData) {
@@ -28,7 +31,7 @@ export class Forum extends React.Component {
         </>
       );
     }
-    this.props.getForumFeed();
+
     return <h1 className="tc">Fetching data...</h1>;
   }
 }

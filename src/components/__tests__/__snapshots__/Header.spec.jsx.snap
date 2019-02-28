@@ -3,14 +3,9 @@
 exports[`Header matches the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withRouter(Connect(Header))
-    dirty={false}
-    errors={Object {}}
-    getflickrFeedByTags={[MockFunction]}
-    handleBlur={[Function]}
-    handleChange={[Function]}
-    handleReset={[Function]}
-    handleSubmit={[Function]}
+  Symbol(enzyme.__unrendered__): <Header
+    getFlickrFeedByTags={[MockFunction]}
+    getForumFeed={[MockFunction]}
     history={
       Object {
         "action": "PUSH",
@@ -32,27 +27,6 @@ ShallowWrapper {
         "replace": [MockFunction],
       }
     }
-    isSubmitting={false}
-    isValid={false}
-    isValidating={false}
-    registerField={[Function]}
-    resetForm={[Function]}
-    setError={[Function]}
-    setErrors={[Function]}
-    setFieldError={[Function]}
-    setFieldTouched={[Function]}
-    setFieldValue={[Function]}
-    setFormikState={[Function]}
-    setStatus={[Function]}
-    setSubmitting={[Function]}
-    setTouched={[Function]}
-    setValues={[Function]}
-    submitCount={0}
-    submitForm={[Function]}
-    touched={Object {}}
-    unregisterField={[Function]}
-    validateField={[Function]}
-    validateForm={[Function]}
     values={
       Object {
         "searchByTags": "",
@@ -71,25 +45,311 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": <div
+        className="flex justify-between w-90"
+      >
+        <button
+          className="bg-transparent bn white ft-35 b ml6"
+          onClick={[Function]}
+        >
+          flickr
+        </button>
+        <div
+          className="ma3 mr6 relative"
+        >
+          <Formik
+            enableReinitialize={false}
+            initialValues={
+              Object {
+                "searchByTags": "",
+              }
+            }
+            isInitialValid={false}
+            onSubmit={[Function]}
+            render={[Function]}
+            validateOnBlur={true}
+            validateOnChange={true}
+          />
+        </div>
+        <button
+          className="bg-transparent white f4 mr5 bn"
+          onClick={[Function]}
+        >
+          Forum
+        </button>
+      </div>,
+      "className": "bg-black h3",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": [Function],
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="bg-transparent bn white ft-35 b ml6"
+            onClick={[Function]}
+          >
+            flickr
+          </button>,
+          <div
+            className="ma3 mr6 relative"
+          >
+            <Formik
+              enableReinitialize={false}
+              initialValues={
+                Object {
+                  "searchByTags": "",
+                }
+              }
+              isInitialValid={false}
+              onSubmit={[Function]}
+              render={[Function]}
+              validateOnBlur={true}
+              validateOnChange={true}
+            />
+          </div>,
+          <button
+            className="bg-transparent white f4 mr5 bn"
+            onClick={[Function]}
+          >
+            Forum
+          </button>,
+        ],
+        "className": "flex justify-between w-90",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "flickr",
+            "className": "bg-transparent bn white ft-35 b ml6",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "flickr",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Formik
+              enableReinitialize={false}
+              initialValues={
+                Object {
+                  "searchByTags": "",
+                }
+              }
+              isInitialValid={false}
+              onSubmit={[Function]}
+              render={[Function]}
+              validateOnBlur={true}
+              validateOnChange={true}
+            />,
+            "className": "ma3 mr6 relative",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "enableReinitialize": false,
+              "initialValues": Object {
+                "searchByTags": "",
+              },
+              "isInitialValid": false,
+              "onSubmit": [Function],
+              "render": [Function],
+              "validateOnBlur": true,
+              "validateOnChange": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Forum",
+            "className": "bg-transparent white f4 mr5 bn",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Forum",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "header",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": <div
+          className="flex justify-between w-90"
+        >
+          <button
+            className="bg-transparent bn white ft-35 b ml6"
+            onClick={[Function]}
+          >
+            flickr
+          </button>
+          <div
+            className="ma3 mr6 relative"
+          >
+            <Formik
+              enableReinitialize={false}
+              initialValues={
+                Object {
+                  "searchByTags": "",
+                }
+              }
+              isInitialValid={false}
+              onSubmit={[Function]}
+              render={[Function]}
+              validateOnBlur={true}
+              validateOnChange={true}
+            />
+          </div>
+          <button
+            className="bg-transparent white f4 mr5 bn"
+            onClick={[Function]}
+          >
+            Forum
+          </button>
+        </div>,
+        "className": "bg-black h3",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": [Function],
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="bg-transparent bn white ft-35 b ml6"
+              onClick={[Function]}
+            >
+              flickr
+            </button>,
+            <div
+              className="ma3 mr6 relative"
+            >
+              <Formik
+                enableReinitialize={false}
+                initialValues={
+                  Object {
+                    "searchByTags": "",
+                  }
+                }
+                isInitialValid={false}
+                onSubmit={[Function]}
+                render={[Function]}
+                validateOnBlur={true}
+                validateOnChange={true}
+              />
+            </div>,
+            <button
+              className="bg-transparent white f4 mr5 bn"
+              onClick={[Function]}
+            >
+              Forum
+            </button>,
+          ],
+          "className": "flex justify-between w-90",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "flickr",
+              "className": "bg-transparent bn white ft-35 b ml6",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "flickr",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Formik
+                enableReinitialize={false}
+                initialValues={
+                  Object {
+                    "searchByTags": "",
+                  }
+                }
+                isInitialValid={false}
+                onSubmit={[Function]}
+                render={[Function]}
+                validateOnBlur={true}
+                validateOnChange={true}
+              />,
+              "className": "ma3 mr6 relative",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "enableReinitialize": false,
+                "initialValues": Object {
+                  "searchByTags": "",
+                },
+                "isInitialValid": false,
+                "onSubmit": [Function],
+                "render": [Function],
+                "validateOnBlur": true,
+                "validateOnChange": true,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Forum",
+              "className": "bg-transparent white f4 mr5 bn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Forum",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "header",
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -113,5 +373,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

@@ -1,15 +1,15 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { getflickrFeedItems, fetchingData } from "../selectors/apiSelectors";
+import { getFlickrFeedItems, fetchingData } from "../selectors/apiSelectors";
 import * as apiThunk from "../actions/thunks/apiThunk";
 import FlickrCard from "../components/FlickrCard";
 
 export class Home extends React.Component {
   componentDidMount() {
-    const { flickrFeedItems, getflickrFeed } = this.props;
+    const { flickrFeedItems, getFlickrFeed } = this.props;
     if (!flickrFeedItems) {
-      getflickrFeed();
+      getFlickrFeed();
     }
   }
   render() {
@@ -34,12 +34,12 @@ export class Home extends React.Component {
 }
 
 export const mapStateToProps = state => ({
-  flickrFeedItems: getflickrFeedItems(state),
+  flickrFeedItems: getFlickrFeedItems(state),
   fetchingData: fetchingData(state)
 });
 
 export const mapDispatchToProps = {
-  getflickrFeed: apiThunk.getflickrFeed
+  getFlickrFeed: apiThunk.getFlickrFeed
 };
 
 export default withRouter(

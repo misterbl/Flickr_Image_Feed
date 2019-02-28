@@ -6,7 +6,7 @@ import {
 } from "../actionCreators/apiActions";
 import config from "../../config";
 
-export const getflickrFeed = () => async dispatch => {
+export const getFlickrFeed = () => async dispatch => {
   try {
     dispatch(fetchingData(true));
     const response = await fetchJsonp(config.flickrFeedUri, {
@@ -24,7 +24,7 @@ export const getflickrFeed = () => async dispatch => {
   }
 };
 
-export const getflickrFeedByTags = tags => async dispatch => {
+export const getFlickrFeedByTags = tags => async dispatch => {
   try {
     dispatch(fetchingData(true));
     const url = `${config.basePhotoPublicUri}?tags=${("safe",
@@ -45,20 +45,20 @@ export const getflickrFeedByTags = tags => async dispatch => {
 };
 
 export const getForumFeed = () => async dispatch => {
-  // try {
-  dispatch(fetchingData(true));
-  const response = await fetchJsonp(config.forumFeedUri, {
-    jsonpCallbackFunction: "jsonFlickrFeed"
-  });
+  try {
+    dispatch(fetchingData(true));
+    const response = await fetchJsonp(config.forumFeedUri, {
+      jsonpCallbackFunction: "jsonFlickrFeed"
+    });
 
-  if (response && response.status === 404) {
+    if (response && response.status === 404) {
+      throw new Error("couldn't get forum feed");
+    }
+    const json = await response.json();
+
+    await dispatch(saveflickrForum(json));
+    dispatch(fetchingData(false));
+  } catch (error) {
     throw new Error("couldn't get forum feed");
   }
-  const json = await response.json();
-
-  await dispatch(saveflickrForum(json));
-  dispatch(fetchingData(false));
-  // } catch (error) {
-  //   throw new Error("couldn't get forum feed");
-  // }
 };

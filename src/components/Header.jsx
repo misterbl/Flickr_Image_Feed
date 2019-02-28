@@ -8,13 +8,18 @@ import ROUTES from "../const/route";
 
 export class Header extends React.Component {
   searchByTags = async data => {
-    await this.props.getflickrFeedByTags(data.searchByTags);
-    this.props.history.push(ROUTES.INDEX);
+    await this.props.getFlickrFeedByTags(data.searchByTags);
+    this.pushToHome();
   };
 
   displayForum = async () => {
-    await this.props.getForumFeed();
-    this.props.history.push(ROUTES.FORUM);
+    const {
+      getForumFeed,
+      history: { push }
+    } = this.props;
+
+    await getForumFeed();
+    push(ROUTES.FORUM);
   };
 
   pushToHome = () => {
@@ -52,7 +57,7 @@ export class Header extends React.Component {
 }
 
 export const mapDispatchToProps = {
-  getflickrFeedByTags: apiThunk.getflickrFeedByTags,
+  getFlickrFeedByTags: apiThunk.getFlickrFeedByTags,
   getForumFeed: apiThunk.getForumFeed
 };
 export default withRouter(

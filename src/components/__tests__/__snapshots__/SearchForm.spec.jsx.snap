@@ -4,33 +4,7 @@ exports[`SearchForm matches the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SearchForm
-    dirty={false}
-    errors={Object {}}
-    handleBlur={[Function]}
-    handleChange={[Function]}
-    handleReset={[Function]}
-    handleSubmit={[Function]}
-    isSubmitting={false}
-    isValid={false}
-    isValidating={false}
-    registerField={[Function]}
-    resetForm={[Function]}
-    setError={[Function]}
-    setErrors={[Function]}
-    setFieldError={[Function]}
-    setFieldTouched={[Function]}
-    setFieldValue={[Function]}
-    setFormikState={[Function]}
-    setStatus={[Function]}
-    setSubmitting={[Function]}
-    setTouched={[Function]}
-    setValues={[Function]}
-    submitCount={0}
-    submitForm={[Function]}
-    touched={Object {}}
-    unregisterField={[Function]}
-    validateField={[Function]}
-    validateForm={[Function]}
+    setFieldValue={[MockFunction]}
     values={
       Object {
         "searchByTags": "",
@@ -78,7 +52,7 @@ ShallowWrapper {
           value=""
         />,
       ],
-      "onSubmit": [Function],
+      "onSubmit": undefined,
     },
     "ref": null,
     "rendered": Array [
@@ -178,7 +152,7 @@ ShallowWrapper {
             value=""
           />,
         ],
-        "onSubmit": [Function],
+        "onSubmit": undefined,
       },
       "ref": null,
       "rendered": Array [

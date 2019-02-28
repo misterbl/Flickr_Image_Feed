@@ -3,9 +3,9 @@ import * as apiSelectors from "../apiSelectors";
 
 describe("apiSelectors", () => {
   const state = generateAppState();
-  describe("getflickrFeedItems", () => {
+  describe("getFlickrFeedItems", () => {
     it("should return the flickr feed", () => {
-      const actual = apiSelectors.getflickrFeedItems(state);
+      const actual = apiSelectors.getFlickrFeedItems(state);
       expect(actual).toEqual(state.api.feed.flickrFeed.items);
     });
   });
