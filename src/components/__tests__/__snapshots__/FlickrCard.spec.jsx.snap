@@ -62,7 +62,7 @@ ShallowWrapper {
           </p>
         </div>,
         <button
-          className="show-more-less-button"
+          className="card-container--button"
           onClick={[Function]}
         >
           show more
@@ -214,7 +214,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "show more",
-          "className": "show-more-less-button",
+          "className": "card-container--button",
           "onClick": [Function],
         },
         "ref": null,
@@ -266,7 +266,7 @@ ShallowWrapper {
             </p>
           </div>,
           <button
-            className="show-more-less-button"
+            className="card-container--button"
             onClick={[Function]}
           >
             show more
@@ -418,7 +418,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "show more",
-            "className": "show-more-less-button",
+            "className": "card-container--button",
             "onClick": [Function],
           },
           "ref": null,

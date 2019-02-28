@@ -42,7 +42,10 @@ export class FlickrCard extends React.Component {
 
           {tags.length > 0 && <p>Tags: {tags}</p>}
         </div>
-        <button className="show-more-less-button" onClick={this.showMoreorLess}>
+        <button
+          className="card-container--button"
+          onClick={this.showMoreorLess}
+        >
           {buttonText}
         </button>
       </div>

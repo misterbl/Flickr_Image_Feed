@@ -38,15 +38,9 @@ a {
   border-right: 1px solid #ccc;
   border-top: 1px solid #ccc;
   border-bottom: none;
-}
-
-.show-more-less-button {
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.13);
-  border-radius: 4px;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  border-top: none;
-  background-color: #f3f5f6;
-  width: 89%;
+  &--button {
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+    width: 89%;
+  }
 }
