@@ -69,7 +69,7 @@ ShallowWrapper {
           htmlFor="searchByTags"
         />,
         <input
-          className="pl4 bn h2"
+          className="pl4 br2 bn h2"
           id="searchByTags"
           name="searchByTags"
           onChange={[Function]}
@@ -130,7 +130,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "pl4 bn h2",
+          "className": "pl4 br2 bn h2",
           "id": "searchByTags",
           "name": "searchByTags",
           "onChange": [Function],
@@ -169,7 +169,7 @@ ShallowWrapper {
             htmlFor="searchByTags"
           />,
           <input
-            className="pl4 bn h2"
+            className="pl4 br2 bn h2"
             id="searchByTags"
             name="searchByTags"
             onChange={[Function]}
@@ -230,7 +230,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "pl4 bn h2",
+            "className": "pl4 br2 bn h2",
             "id": "searchByTags",
             "name": "searchByTags",
             "onChange": [Function],

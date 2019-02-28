@@ -46,19 +46,24 @@ ShallowWrapper {
           </a>
         </p>,
         <p
-          className="mt4"
+          className="mt4 no-underline"
           dangerouslySetInnerHTML={
             Object {
               "__html": "Description descriptionTest",
             }
           }
         />,
+        <button
+          onCLick={[Function]}
+        >
+          show more
+        </button>,
         <p>
           Tags: 
           tagsTest
         </p>,
       ],
-      "className": "ba pa3 mw5 ma4 overflow-hidden",
+      "className": "ba pa3 mw5 mr4 mv4 overflow-hidden card-container  mh-500",
     },
     "ref": null,
     "rendered": Array [
@@ -129,7 +134,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "mt4",
+          "className": "mt4 no-underline",
           "dangerouslySetInnerHTML": Object {
             "__html": "Description descriptionTest",
           },
@@ -137,6 +142,18 @@ ShallowWrapper {
         "ref": null,
         "rendered": null,
         "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "show more",
+          "onCLick": [Function],
+        },
+        "ref": null,
+        "rendered": "show more",
+        "type": "button",
       },
       Object {
         "instance": null,
@@ -184,19 +201,24 @@ ShallowWrapper {
             </a>
           </p>,
           <p
-            className="mt4"
+            className="mt4 no-underline"
             dangerouslySetInnerHTML={
               Object {
                 "__html": "Description descriptionTest",
               }
             }
           />,
+          <button
+            onCLick={[Function]}
+          >
+            show more
+          </button>,
           <p>
             Tags: 
             tagsTest
           </p>,
         ],
-        "className": "ba pa3 mw5 ma4 overflow-hidden",
+        "className": "ba pa3 mw5 mr4 mv4 overflow-hidden card-container  mh-500",
       },
       "ref": null,
       "rendered": Array [
@@ -267,7 +289,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "mt4",
+            "className": "mt4 no-underline",
             "dangerouslySetInnerHTML": Object {
               "__html": "Description descriptionTest",
             },
@@ -275,6 +297,18 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "show more",
+            "onCLick": [Function],
+          },
+          "ref": null,
+          "rendered": "show more",
+          "type": "button",
         },
         Object {
           "instance": null,
@@ -318,5 +352,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

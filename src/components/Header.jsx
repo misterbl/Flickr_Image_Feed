@@ -22,28 +22,30 @@ export class Header extends React.Component {
   };
   render() {
     return (
-      <header className="bg-black h3 flex justify-between">
-        <button
-          onClick={this.pushToHome}
-          className="bg-transparent bn white ft-35 b ml6"
-        >
-          flickr
-        </button>
-        <div className="ma3 mr6 relative">
-          <Formik
-            initialValues={{
-              searchByTags: ""
-            }}
-            onSubmit={this.searchByTags}
-            render={formikProps => <SearchForm {...formikProps} />}
-          />
+      <header className="bg-black h3">
+        <div className="flex justify-between w-90">
+          <button
+            onClick={this.pushToHome}
+            className="bg-transparent bn white ft-35 b ml6"
+          >
+            flickr
+          </button>
+          <div className="ma3 mr6 relative">
+            <Formik
+              initialValues={{
+                searchByTags: ""
+              }}
+              onSubmit={this.searchByTags}
+              render={formikProps => <SearchForm {...formikProps} />}
+            />
+          </div>
+          <button
+            className="bg-transparent white f4 mr5 bn"
+            onClick={this.displayForum}
+          >
+            Forum
+          </button>
         </div>
-        <button
-          className="bg-transparent white f4 mr5 bn"
-          onClick={this.displayForum}
-        >
-          Forum
-        </button>
       </header>
     );
   }

@@ -47,7 +47,7 @@ ShallowWrapper {
           }
         />,
       ],
-      "className": "ba pa3 ma4 overflow-hidden",
+      "className": "ba pa3 ma4 overflow-hidden card-container w-80",
     },
     "ref": null,
     "rendered": Array [
@@ -146,7 +146,7 @@ ShallowWrapper {
             }
           />,
         ],
-        "className": "ba pa3 ma4 overflow-hidden",
+        "className": "ba pa3 ma4 overflow-hidden card-container w-80",
       },
       "ref": null,
       "rendered": Array [

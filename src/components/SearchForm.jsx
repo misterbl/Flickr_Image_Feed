@@ -31,7 +31,7 @@ class SearchForm extends React.PureComponent {
           value={values.searchByTags}
           onChange={this.onTagsChange}
           placeholder="search by tags"
-          className="pl4 bn h2"
+          className="pl4 br2 bn h2"
         />
       </form>
     );

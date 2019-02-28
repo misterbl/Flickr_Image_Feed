@@ -34,7 +34,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": undefined,
-      "className": "flex flex-wrap ma3",
+      "className": "flex flex-wrap ml6",
     },
     "ref": null,
     "rendered": null,
@@ -47,7 +47,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": undefined,
-        "className": "flex flex-wrap ma3",
+        "className": "flex flex-wrap ml6",
       },
       "ref": null,
       "rendered": null,

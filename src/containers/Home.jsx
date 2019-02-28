@@ -11,7 +11,7 @@ export class Home extends React.Component {
   }
   render() {
     return (
-      <div className="flex flex-wrap ma3">
+      <div className="flex flex-wrap ml6">
         {this.props.flickrFeedItems &&
           this.props.flickrFeedItems.map(item => (
             <FlickrCard
