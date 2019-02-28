@@ -46,6 +46,7 @@ ShallowWrapper {
           </a>
         </p>,
         <p
+          className="mt4"
           dangerouslySetInnerHTML={
             Object {
               "__html": "Description descriptionTest",
@@ -57,7 +58,7 @@ ShallowWrapper {
           tagsTest
         </p>,
       ],
-      "className": "ba pa3 w-25 ma3 overflow-hidden",
+      "className": "ba pa3 mw5 ma4 overflow-hidden",
     },
     "ref": null,
     "rendered": Array [
@@ -128,6 +129,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "className": "mt4",
           "dangerouslySetInnerHTML": Object {
             "__html": "Description descriptionTest",
           },
@@ -182,6 +184,7 @@ ShallowWrapper {
             </a>
           </p>,
           <p
+            className="mt4"
             dangerouslySetInnerHTML={
               Object {
                 "__html": "Description descriptionTest",
@@ -193,7 +196,7 @@ ShallowWrapper {
             tagsTest
           </p>,
         ],
-        "className": "ba pa3 w-25 ma3 overflow-hidden",
+        "className": "ba pa3 mw5 ma4 overflow-hidden",
       },
       "ref": null,
       "rendered": Array [
@@ -264,6 +267,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "mt4",
             "dangerouslySetInnerHTML": Object {
               "__html": "Description descriptionTest",
             },

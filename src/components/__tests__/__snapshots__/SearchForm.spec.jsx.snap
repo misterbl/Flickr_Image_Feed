@@ -60,6 +60,7 @@ ShallowWrapper {
         >
           <img
             alt="search icon"
+            className="mt1"
             src="search.svg"
           />
         </button>,
@@ -68,7 +69,7 @@ ShallowWrapper {
           htmlFor="buildingUnit"
         />,
         <input
-          className="pl4 bn"
+          className="pl4 bn h2"
           id="searchByTags"
           name="searchByTags"
           onChange={[Function]}
@@ -88,6 +89,7 @@ ShallowWrapper {
         "props": Object {
           "children": <img
             alt="search icon"
+            className="mt1"
             src="search.svg"
           />,
           "className": "absolute bn bg-transparent",
@@ -102,6 +104,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "alt": "search icon",
+            "className": "mt1",
             "src": "search.svg",
           },
           "ref": null,
@@ -127,7 +130,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "pl4 bn",
+          "className": "pl4 bn h2",
           "id": "searchByTags",
           "name": "searchByTags",
           "onChange": [Function],
@@ -157,6 +160,7 @@ ShallowWrapper {
           >
             <img
               alt="search icon"
+              className="mt1"
               src="search.svg"
             />
           </button>,
@@ -165,7 +169,7 @@ ShallowWrapper {
             htmlFor="buildingUnit"
           />,
           <input
-            className="pl4 bn"
+            className="pl4 bn h2"
             id="searchByTags"
             name="searchByTags"
             onChange={[Function]}
@@ -185,6 +189,7 @@ ShallowWrapper {
           "props": Object {
             "children": <img
               alt="search icon"
+              className="mt1"
               src="search.svg"
             />,
             "className": "absolute bn bg-transparent",
@@ -199,6 +204,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "alt": "search icon",
+              "className": "mt1",
               "src": "search.svg",
             },
             "ref": null,
@@ -224,7 +230,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "pl4 bn",
+            "className": "pl4 bn h2",
             "id": "searchByTags",
             "name": "searchByTags",
             "onChange": [Function],

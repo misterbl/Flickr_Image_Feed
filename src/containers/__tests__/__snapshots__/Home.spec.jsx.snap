@@ -54,7 +54,7 @@ ShallowWrapper {
           className="bg-black h3 flex justify-between"
         >
           <p
-            className="white f4 b ml6"
+            className="white ft-35 b ml6 mt2"
           >
             flickr
           </p>
@@ -78,7 +78,7 @@ ShallowWrapper {
         </header>,
         false,
         <div
-          className="flex flex-wrap"
+          className="flex flex-wrap ma3"
         >
           <FlickrCard
             image="mediaTest"
@@ -95,7 +95,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <p
-              className="white f4 b ml6"
+              className="white ft-35 b ml6 mt2"
             >
               flickr
             </p>,
@@ -127,7 +127,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "flickr",
-              "className": "white f4 b ml6",
+              "className": "white ft-35 b ml6 mt2",
             },
             "ref": null,
             "rendered": "flickr",
@@ -189,7 +189,7 @@ ShallowWrapper {
               image="mediaTest"
             />,
           ],
-          "className": "flex flex-wrap",
+          "className": "flex flex-wrap ma3",
         },
         "ref": null,
         "rendered": Array [
@@ -227,7 +227,7 @@ ShallowWrapper {
             className="bg-black h3 flex justify-between"
           >
             <p
-              className="white f4 b ml6"
+              className="white ft-35 b ml6 mt2"
             >
               flickr
             </p>
@@ -251,7 +251,7 @@ ShallowWrapper {
           </header>,
           false,
           <div
-            className="flex flex-wrap"
+            className="flex flex-wrap ma3"
           >
             <FlickrCard
               image="mediaTest"
@@ -268,7 +268,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <p
-                className="white f4 b ml6"
+                className="white ft-35 b ml6 mt2"
               >
                 flickr
               </p>,
@@ -300,7 +300,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "flickr",
-                "className": "white f4 b ml6",
+                "className": "white ft-35 b ml6 mt2",
               },
               "ref": null,
               "rendered": "flickr",
@@ -362,7 +362,7 @@ ShallowWrapper {
                 image="mediaTest"
               />,
             ],
-            "className": "flex flex-wrap",
+            "className": "flex flex-wrap ma3",
           },
           "ref": null,
           "rendered": Array [

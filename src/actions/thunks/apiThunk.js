@@ -8,7 +8,7 @@ export const getflickrFeed = () => async dispatch => {
   try {
     dispatch(fetchingFlickrFeed(true));
     const url =
-      "https://api.flickr.com/services/feeds/photos_public.gne?format=json";
+      "https://api.flickr.com/services/feeds/photos_public.gne?tags=safe&format=json";
     const response = await fetchJsonp(url, {
       jsonpCallbackFunction: "jsonFlickrFeed"
     });
@@ -27,7 +27,8 @@ export const getflickrFeed = () => async dispatch => {
 export const getflickrFeedByTags = tags => async dispatch => {
   try {
     dispatch(fetchingFlickrFeed(true));
-    const url = `https://api.flickr.com/services/feeds/photos_public.gne?tags=safe,${tags}&format=json`;
+    const url = `https://api.flickr.com/services/feeds/photos_public.gne?tags=${("safe",
+    tags)}&format=json`;
     const response = await fetchJsonp(url, {
       jsonpCallbackFunction: "jsonFlickrFeed"
     });

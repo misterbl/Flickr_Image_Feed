@@ -18,7 +18,7 @@ class SearchForm extends React.PureComponent {
           className="absolute bn bg-transparent"
           disabled={values.searchByTags === ""}
         >
-          <img src={searchIcon} alt="search icon" />
+          <img src={searchIcon} alt="search icon" className="mt1" />
         </button>
         <label
           className="font-weight-bold d-flex justify-content-between"
@@ -32,7 +32,7 @@ class SearchForm extends React.PureComponent {
           value={values.searchByTags}
           onChange={this.onTagsChange}
           placeholder="search by tags"
-          className="pl4 bn"
+          className="pl4 bn h2"
         />
       </form>
     );

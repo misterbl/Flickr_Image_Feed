@@ -35,7 +35,7 @@ export class Home extends React.Component {
     return (
       <>
         <header className="bg-black h3 flex justify-between">
-          <p className="white f4 b ml6">flickr</p>
+          <p className="white ft-35 b ml6 mt2">flickr</p>
           <div className="ma3 mr6 relative">
             <Formik
               initialValues={{
@@ -56,7 +56,7 @@ export class Home extends React.Component {
             />
           </div>
         )}
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap ma3">
           {this.props.flickrFeedItems &&
             this.props.flickrFeedItems.map(item => (
               <FlickrCard
