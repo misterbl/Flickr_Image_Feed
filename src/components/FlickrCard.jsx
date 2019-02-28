@@ -25,7 +25,9 @@ export class FlickrCard extends React.Component {
         <div
           className={`ba pa3 mw5 mr4 mt4 overflow-hidden card-container ${divHeight}`}
         >
-          <img className="w-100" src={image} alt={title} />
+          <div className="image-container">
+            <img className="image-card" src={image} alt={title} />
+          </div>
           <p>
             <a href={link}>{`${title}`}</a> by
             <a
