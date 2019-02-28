@@ -27,15 +27,15 @@ export class Header extends React.Component {
   };
   render() {
     return (
-      <header className="bg-black h3">
+      <header className="bg-black h3 w-100 fixed top-0">
         <div className="flex justify-between w-90">
           <button
             onClick={this.pushToHome}
-            className="bg-transparent bn white ft-35 b ml6"
+            className="bg-transparent bn white ft-35 b ml6-l"
           >
             flickr
           </button>
-          <div className="ma3 mr6 relative">
+          <div className="ma3 mr6-l relative">
             <Formik
               initialValues={{
                 searchByTags: ""

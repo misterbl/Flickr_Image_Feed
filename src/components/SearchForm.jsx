@@ -30,7 +30,7 @@ class SearchForm extends React.PureComponent {
           name="searchByTags"
           value={values.searchByTags}
           onChange={this.onTagsChange}
-          placeholder="search by tags"
+          placeholder="search photos by tags"
           className="pl4 br2 bn h2"
         />
       </form>

@@ -15,7 +15,7 @@ export class Forum extends React.Component {
       return (
         <>
           <h1 className="tc">{forumData.title}</h1>
-          <div className="ml6">
+          <div className="ml6-l ml3">
             {forumData &&
               forumData.items.map(item => (
                 <ForumCard
