@@ -9,12 +9,11 @@ class SearchForm extends React.PureComponent {
 
   render() {
     const { values, handleSubmit } = this.props;
-
     return (
       <form onSubmit={handleSubmit}>
         <button
           type="submit"
-          id="next-button"
+          id="search-by-tags-button"
           className="absolute bn bg-transparent"
           disabled={values.searchByTags === ""}
         >
@@ -22,7 +21,7 @@ class SearchForm extends React.PureComponent {
         </button>
         <label
           className="font-weight-bold d-flex justify-content-between"
-          htmlFor="buildingUnit"
+          htmlFor="searchByTags"
         />
 
         <input

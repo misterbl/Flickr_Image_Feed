@@ -6,7 +6,9 @@ Users can search items by tags too.
 
 A safe tag has been added for the search functionality to ensure the application remains suitable for all ages.
 
-The app uses Tachyon CSS classes for better performance
+The app uses Tachyon CSS classes for better performance.
+
+A router had been implemented in case it is needed in the future.
 
 ## Getting Started
 

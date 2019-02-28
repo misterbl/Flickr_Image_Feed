@@ -1,8 +1,8 @@
 import * as React from "react";
 import { shallow } from "enzyme";
-import { Home } from "../Home";
+import { App } from "../App";
 
-describe("Home", () => {
+describe("App", () => {
   const props = {
     flickrFeedItems: [
       {
@@ -22,7 +22,7 @@ describe("Home", () => {
     getflickrFeedByTags: jest.fn()
   };
 
-  const wrapper = shallow(<Home {...props} />);
+  const wrapper = shallow(<App {...props} />);
   it("matches the snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });

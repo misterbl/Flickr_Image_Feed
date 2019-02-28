@@ -55,7 +55,7 @@ ShallowWrapper {
         <button
           className="absolute bn bg-transparent"
           disabled={true}
-          id="next-button"
+          id="search-by-tags-button"
           type="submit"
         >
           <img
@@ -66,7 +66,7 @@ ShallowWrapper {
         </button>,
         <label
           className="font-weight-bold d-flex justify-content-between"
-          htmlFor="buildingUnit"
+          htmlFor="searchByTags"
         />,
         <input
           className="pl4 bn h2"
@@ -94,7 +94,7 @@ ShallowWrapper {
           />,
           "className": "absolute bn bg-transparent",
           "disabled": true,
-          "id": "next-button",
+          "id": "search-by-tags-button",
           "type": "submit",
         },
         "ref": null,
@@ -119,7 +119,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "className": "font-weight-bold d-flex justify-content-between",
-          "htmlFor": "buildingUnit",
+          "htmlFor": "searchByTags",
         },
         "ref": null,
         "rendered": null,
@@ -155,7 +155,7 @@ ShallowWrapper {
           <button
             className="absolute bn bg-transparent"
             disabled={true}
-            id="next-button"
+            id="search-by-tags-button"
             type="submit"
           >
             <img
@@ -166,7 +166,7 @@ ShallowWrapper {
           </button>,
           <label
             className="font-weight-bold d-flex justify-content-between"
-            htmlFor="buildingUnit"
+            htmlFor="searchByTags"
           />,
           <input
             className="pl4 bn h2"
@@ -194,7 +194,7 @@ ShallowWrapper {
             />,
             "className": "absolute bn bg-transparent",
             "disabled": true,
-            "id": "next-button",
+            "id": "search-by-tags-button",
             "type": "submit",
           },
           "ref": null,
@@ -219,7 +219,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "className": "font-weight-bold d-flex justify-content-between",
-            "htmlFor": "buildingUnit",
+            "htmlFor": "searchByTags",
           },
           "ref": null,
           "rendered": null,
