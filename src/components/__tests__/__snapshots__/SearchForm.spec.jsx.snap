@@ -47,7 +47,7 @@ ShallowWrapper {
           id="searchByTags"
           name="searchByTags"
           onChange={[Function]}
-          placeholder="search by tags"
+          placeholder="search photos by tags"
           type="text"
           value=""
         />,
@@ -108,7 +108,7 @@ ShallowWrapper {
           "id": "searchByTags",
           "name": "searchByTags",
           "onChange": [Function],
-          "placeholder": "search by tags",
+          "placeholder": "search photos by tags",
           "type": "text",
           "value": "",
         },
@@ -147,7 +147,7 @@ ShallowWrapper {
             id="searchByTags"
             name="searchByTags"
             onChange={[Function]}
-            placeholder="search by tags"
+            placeholder="search photos by tags"
             type="text"
             value=""
           />,
@@ -208,7 +208,7 @@ ShallowWrapper {
             "id": "searchByTags",
             "name": "searchByTags",
             "onChange": [Function],
-            "placeholder": "search by tags",
+            "placeholder": "search photos by tags",
             "type": "text",
             "value": "",
           },

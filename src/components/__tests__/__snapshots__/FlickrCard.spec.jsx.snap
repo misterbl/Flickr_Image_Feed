@@ -30,11 +30,14 @@ ShallowWrapper {
         <div
           className="ba pa3 mw5 mr4 mt4 overflow-hidden card-container  mh-500"
         >
-          <img
-            alt="titleTest"
-            className="image-card"
-            src="imageTest"
-          />
+          <div
+            className="img-block "
+          >
+            <img
+              alt="titleTest"
+              src="imageTest"
+            />
+          </div>
           <p>
             <a
               href="linkTest"
@@ -61,12 +64,16 @@ ShallowWrapper {
             tagsTest
           </p>
         </div>,
-        <button
-          className="card-container--button"
-          onClick={[Function]}
+        <div
+          className="mr4"
         >
-          show more
-        </button>,
+          <button
+            className="card-container--button w-100"
+            onClick={[Function]}
+          >
+            show more
+          </button>
+        </div>,
       ],
     },
     "ref": null,
@@ -77,11 +84,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <img
-              alt="titleTest"
-              className="image-card"
-              src="imageTest"
-            />,
+            <div
+              className="img-block "
+            >
+              <img
+                alt="titleTest"
+                src="imageTest"
+              />
+            </div>,
             <p>
               <a
                 href="linkTest"
@@ -117,13 +127,26 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "alt": "titleTest",
-              "className": "image-card",
-              "src": "imageTest",
+              "children": <img
+                alt="titleTest"
+                src="imageTest"
+              />,
+              "className": "img-block ",
             },
             "ref": null,
-            "rendered": null,
-            "type": "img",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "titleTest",
+                "src": "imageTest",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
           },
           Object {
             "instance": null,
@@ -213,13 +236,29 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "show more",
-          "className": "card-container--button",
-          "onClick": [Function],
+          "children": <button
+            className="card-container--button w-100"
+            onClick={[Function]}
+          >
+            show more
+          </button>,
+          "className": "mr4",
         },
         "ref": null,
-        "rendered": "show more",
-        "type": "button",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "show more",
+            "className": "card-container--button w-100",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "show more",
+          "type": "button",
+        },
+        "type": "div",
       },
     ],
     "type": "div",
@@ -234,11 +273,14 @@ ShallowWrapper {
           <div
             className="ba pa3 mw5 mr4 mt4 overflow-hidden card-container  mh-500"
           >
-            <img
-              alt="titleTest"
-              className="image-card"
-              src="imageTest"
-            />
+            <div
+              className="img-block "
+            >
+              <img
+                alt="titleTest"
+                src="imageTest"
+              />
+            </div>
             <p>
               <a
                 href="linkTest"
@@ -265,12 +307,16 @@ ShallowWrapper {
               tagsTest
             </p>
           </div>,
-          <button
-            className="card-container--button"
-            onClick={[Function]}
+          <div
+            className="mr4"
           >
-            show more
-          </button>,
+            <button
+              className="card-container--button w-100"
+              onClick={[Function]}
+            >
+              show more
+            </button>
+          </div>,
         ],
       },
       "ref": null,
@@ -281,11 +327,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <img
-                alt="titleTest"
-                className="image-card"
-                src="imageTest"
-              />,
+              <div
+                className="img-block "
+              >
+                <img
+                  alt="titleTest"
+                  src="imageTest"
+                />
+              </div>,
               <p>
                 <a
                   href="linkTest"
@@ -321,13 +370,26 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "alt": "titleTest",
-                "className": "image-card",
-                "src": "imageTest",
+                "children": <img
+                  alt="titleTest"
+                  src="imageTest"
+                />,
+                "className": "img-block ",
               },
               "ref": null,
-              "rendered": null,
-              "type": "img",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "titleTest",
+                  "src": "imageTest",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
             },
             Object {
               "instance": null,
@@ -417,13 +479,29 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "show more",
-            "className": "card-container--button",
-            "onClick": [Function],
+            "children": <button
+              className="card-container--button w-100"
+              onClick={[Function]}
+            >
+              show more
+            </button>,
+            "className": "mr4",
           },
           "ref": null,
-          "rendered": "show more",
-          "type": "button",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "show more",
+              "className": "card-container--button w-100",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "show more",
+            "type": "button",
+          },
+          "type": "div",
         },
       ],
       "type": "div",

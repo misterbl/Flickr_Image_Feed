@@ -41,7 +41,7 @@ ShallowWrapper {
           image="mediaTest"
         />,
       ],
-      "className": "flex flex-wrap ml6",
+      "className": "flex flex-wrap ml6-l ml5 mt5 mb4",
     },
     "ref": null,
     "rendered": Array [
@@ -76,7 +76,7 @@ ShallowWrapper {
             image="mediaTest"
           />,
         ],
-        "className": "flex flex-wrap ml6",
+        "className": "flex flex-wrap ml6-l ml5 mt5 mb4",
       },
       "ref": null,
       "rendered": Array [

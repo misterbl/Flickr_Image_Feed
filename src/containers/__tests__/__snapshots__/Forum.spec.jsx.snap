@@ -53,7 +53,7 @@ ShallowWrapper {
           Flickr forum
         </h1>,
         <div
-          className="ml6"
+          className="ml6-l ml3"
         >
           <ForumCard
             author="authorTest"
@@ -93,7 +93,7 @@ ShallowWrapper {
               title="titleTest"
             />,
           ],
-          "className": "ml6",
+          "className": "ml6-l ml3",
         },
         "ref": null,
         "rendered": Array [
@@ -131,7 +131,7 @@ ShallowWrapper {
             Flickr forum
           </h1>,
           <div
-            className="ml6"
+            className="ml6-l ml3"
           >
             <ForumCard
               author="authorTest"
@@ -171,7 +171,7 @@ ShallowWrapper {
                 title="titleTest"
               />,
             ],
-            "className": "ml6",
+            "className": "ml6-l ml3",
           },
           "ref": null,
           "rendered": Array [

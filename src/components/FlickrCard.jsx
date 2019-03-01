@@ -28,7 +28,9 @@ export class FlickrCard extends React.Component {
         <div
           className={`ba pa3 mw5 mr4 mt4 overflow-hidden card-container ${divHeight}`}
         >
-          <img className="image-card" src={image} alt={title} />
+          <div className="img-block ">
+            <img src={image} alt={title} />
+          </div>
           <p>
             <a href={link}>{`${title}`}</a> by
             <a
@@ -42,12 +44,14 @@ export class FlickrCard extends React.Component {
 
           {tags.length > 0 && <p>Tags: {tags}</p>}
         </div>
-        <button
-          className="card-container--button"
-          onClick={this.showMoreorLess}
-        >
-          {buttonText}
-        </button>
+        <div className="mr4">
+          <button
+            className="card-container--button w-100"
+            onClick={this.showMoreorLess}
+          >
+            {buttonText}
+          </button>
+        </div>
       </div>
     );
   }
