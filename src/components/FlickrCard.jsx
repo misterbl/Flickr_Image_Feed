@@ -38,7 +38,7 @@ export class FlickrCard extends React.Component {
             >{` ${author}`}</a>
           </p>
           <p
-            dangerouslySetInnerHTML={{ __html: `Description ${description}` }}
+            dangerouslySetInnerHTML={{ __html: description }}
             className="mt4 no-underline"
           />
 

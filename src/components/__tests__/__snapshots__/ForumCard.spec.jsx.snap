@@ -42,7 +42,7 @@ ShallowWrapper {
           className="mt4"
           dangerouslySetInnerHTML={
             Object {
-              "__html": "Description descriptionTest",
+              "__html": "descriptionTest",
             }
           }
         />,
@@ -107,7 +107,7 @@ ShallowWrapper {
         "props": Object {
           "className": "mt4",
           "dangerouslySetInnerHTML": Object {
-            "__html": "Description descriptionTest",
+            "__html": "descriptionTest",
           },
         },
         "ref": null,
@@ -141,7 +141,7 @@ ShallowWrapper {
             className="mt4"
             dangerouslySetInnerHTML={
               Object {
-                "__html": "Description descriptionTest",
+                "__html": "descriptionTest",
               }
             }
           />,
@@ -206,7 +206,7 @@ ShallowWrapper {
           "props": Object {
             "className": "mt4",
             "dangerouslySetInnerHTML": Object {
-              "__html": "Description descriptionTest",
+              "__html": "descriptionTest",
             },
           },
           "ref": null,
